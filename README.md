@@ -22,6 +22,10 @@ Make sure you have the following:
 - **Gazebo** (comes with ROS Noetic by default)
 - **catkin tools**: Install it with:
   ```bash
+
+https://github.com/user-attachments/assets/552faa8b-dca9-4385-80fc-053f405369fa
+
+
   sudo apt install python3-catkin-tools
   ```
 - Additional ROS packages:
