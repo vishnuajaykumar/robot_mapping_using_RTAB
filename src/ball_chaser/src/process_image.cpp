@@ -42,6 +42,8 @@ void process_image_callback(const sensor_msgs::Image img)
     
     if (white_ball_detected)
     {
+        int ball_position = sum_positions / white_pixel_count;
+        
         if (ball_position < left_region)
         {
             drive_robot(0.0, 0.5); // Turn left
