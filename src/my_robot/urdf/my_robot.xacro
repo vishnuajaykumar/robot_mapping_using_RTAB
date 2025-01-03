@@ -37,12 +37,13 @@
       <geometry>
         <box size="0.45 0.3 0.1"/>
       </geometry>
-      <material name="Blue">
-        <color rgba="0 0 1 1"/>
+      <material name="bright_red">
+        <color rgba="1 0 0 1"/>
       </material>
     </visual>
+    
 
-
+    
     <collision name="back_caster_collision">
       <origin xyz="-0.15 0 -0.075" rpy="0 0 0"/>
       <geometry>
@@ -54,11 +55,12 @@
       <geometry>
         <sphere radius="0.075"/>
       </geometry>
-      <material name="Yellow">
+      <material name="">
         <color rgba="1 1 0 1"/>
       </material>
     </visual>
-
+    
+   
 
     <collision name="front_caster_collision">
       <origin xyz="0.15 0 -0.075" rpy="0 0 0"/>
@@ -71,14 +73,11 @@
       <geometry>
         <sphere radius="0.075"/>
       </geometry>
-      <material name="Yellow">
+      <material name="">
         <color rgba="1 1 0 1"/>
       </material>
     </visual>
-
   </link>
-
-
   <link name="left_wheel">
     <inertial>
       <mass value="5.0"/>
@@ -106,6 +105,7 @@
     </visual>
   </link>
 
+  
   <!-- LEFT WHEEL JOINT -->
   <joint type="continuous" name="left_wheel_hinge">
     <origin xyz="0 0.2 0" rpy="0 0 0"/> 
@@ -224,5 +224,24 @@
     <child link="hokuyo"/>
     <axis xyz="0 1 0"/>
   </joint>
-
+  
+  <!-- Gazebo color Chasis -->
+  <gazebo reference="chassis">
+    <material>Gazebo/Blue</material> 
+  </gazebo>
+  
+  <!-- GAZEBOleft wheel -->
+    <gazebo reference="left_wheel">
+      <material>Gazebo/Green</material>
+    </gazebo>
+  <!-- GAZEBO right wheel -->
+    <gazebo reference="right_wheel">
+      <material>Gazebo/Green</material>
+    </gazebo>
+  <!-- GAZEBO color camera -->
+    <gazebo reference="camera">
+      <material>Gazebo/Red</material>
+    </gazebo>
+    
+    
 </robot>
