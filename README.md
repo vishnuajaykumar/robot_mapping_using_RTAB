@@ -10,7 +10,11 @@ Welcome to theproject! This is where robots meet fun, chasing a white ball in a 
 This project consists of two key packages:
 
 - **`my_robot`**: Contains the robot's URDF, sensors, and Gazebo world setup.
-- **`ball_chaser`**: Includes the brains of the operation—control nodes for chasing the ball.
+- **`ball_chaser`**: Includes the br
+
+https://github.com/user-attachments/assets/3a934e7a-ba90-43d0-8ad8-65d647a2ac92
+
+ains of the operation—control nodes for chasing the ball.
 
 ---
 
@@ -22,6 +26,10 @@ Make sure you have the following:
 - **Gazebo** (comes with ROS Noetic by default)
 - **catkin tools**: Install it with:
   ```bash
+
+
+
+
   sudo apt install python3-catkin-tools
   ```
 - Additional ROS packages:
