@@ -1,12 +1,19 @@
-# Exclude build and development artifacts
-/build/
-/devel/
-*/build/
-*/devel/
-*.catkin_workspace
-/log/
+# Ignore everything except the `src/ball_chaser` and `src/my_robot` directories
 
+# Ignore all files and folders in the root
+*
 
-# Exclude the simple_arm package
-src/simple_arm/
+# Allow the `src` folder
+!src/
+
+# Ignore everything inside `src`
+src/*
+
+# Allow only `src/ball_chaser` and `src/my_robot`
+!src/ball_chaser/
+!src/my_robot/
+
+# Ignore `build` and `devel` folders in the root
+build/
+devel/
 
