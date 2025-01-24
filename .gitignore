@@ -16,4 +16,4 @@ src/*
 # Ignore `build` and `devel` folders in the root
 build/
 devel/
-
+/README.md
