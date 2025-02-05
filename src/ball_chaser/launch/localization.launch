@@ -3,7 +3,7 @@
 <launch>
 
   <!-- Launch the robot and world from the my_robot package -->
-  <include file="$(find my_robot)/launch/world.launch"/>
+  <!--include file="$(find my_robot)/launch/world.launch"/-->
   
   
   <!-- Arguments for launch file with defaults provided -->
