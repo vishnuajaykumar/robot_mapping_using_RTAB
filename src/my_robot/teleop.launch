@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <!-- Launch the teleop_twist_keyboard node -->
+  <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop_twist" output="screen">
+    <param name="repeat_rate" type="double" value="10.0"/>  
+    <remap from="cmd_vel" to="/cmd_vel"/>
+  </node>
+</launch>
+
